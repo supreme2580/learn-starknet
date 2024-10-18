@@ -20,25 +20,19 @@ export default function Home() {
                   <DialogDescription>Select a starknet wallet to connect to</DialogDescription>
                   <Button>Argent</Button>
                   <Button>Braavos</Button>
-                  <Button>Argent Mobile</Button>
-                  <Button>Web Wallet</Button>
                 </DialogHeader>
               </DialogContent>
             </Dialog>
-            <p className="text-white text-sm font-semibold">Events </p>
-            <div className="flex-1 h-full overflow-y-scroll">
-            </div>
+            <div className="flex-1 h-full overflow-y-scroll" />
             {/* Write to contract */}
-            <Input type="text" placeholder="Enter data" />
+            <p className="text-white text-sm font-semibold">Write to contract: </p>
+            <Input type="text" placeholder="Enter receipient" />
             <p className="text-white text-sm font-semibold">Status: </p>
-            <Button>Write Contract</Button>
+            <Button>Send Transaction</Button>
             {/* Read contract */}
-            <Button className="w-full h-10 bg-transparent border-2 border-green-500 text-green-500">Read contract</Button>
+            <p className="text-white text-sm font-semibold">Read contract symbol: </p>
+            <Input type="text" placeholder="Contract address" />
             <p className="text-white text-sm font-semibold">Data returned: </p>
-            {/* Get block number */}
-            <Input type="text" placeholder="Enter address" />
-            <p className="text-white text-sm font-semibold">Block number of provided contract address: </p>
-            <Button>Get Block number</Button>
             {/* Get balance */}
             <Input type="text" placeholder="Enter address" />
             <p className="text-white text-sm font-semibold">Balance of provided address: </p>
