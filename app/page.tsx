@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
 export default function Home() {
   return (
@@ -9,7 +10,21 @@ export default function Home() {
       <main className="w-[80%] min-h-[640px] border-2 border-green-500 rounded-lg p-2.5">
         <div className="flex flex-row items-start justify-between space-x-2.5 w-full h-full">
           <div className="flex-1 flex flex-col h-[620px] space-y-2.5">
-            <Button>Connect Wallet</Button>
+            <Dialog>
+              <DialogTrigger>
+                <Button>Connect Wallet</Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Connect Wallet</DialogTitle>
+                  <DialogDescription>Select a starknet wallet to connect to</DialogDescription>
+                  <Button>Argent</Button>
+                  <Button>Braavos</Button>
+                  <Button>Argent Mobile</Button>
+                  <Button>Web Wallet</Button>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
             <p className="text-white text-sm font-semibold">Events </p>
             <div className="flex-1 h-full overflow-y-scroll">
             </div>
