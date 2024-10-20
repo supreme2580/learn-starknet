@@ -6,10 +6,10 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 
 export default function Home() {
   return (
-    <div className="bg-black w-full h-full min-h-screen flex flex-col items-center justify-center">
-      <main className="w-[80%] min-h-[640px] border-2 border-green-500 rounded-lg p-2.5">
+    <div className="bg-[#161618] w-full h-full min-h-screen flex flex-col items-center justify-center">
+      <main className="w-[80%] min-h-[640px] border-2 border-[#222122] bg-[#1C1C1E] rounded-xl p-20">
         <div className="flex flex-row items-start justify-between space-x-2.5 w-full h-full">
-          <div className="flex-1 flex flex-col h-[620px] space-y-2.5">
+          <div className="flex-1 flex flex-col h-[520px] space-y-2.5">
             <Dialog>
               <DialogTrigger>
                 <Button>Connect Wallet</Button>
@@ -38,10 +38,10 @@ export default function Home() {
             <p className="text-white text-sm font-semibold">Balance of provided address: </p>
             <Button>Get Balance</Button>
           </div>
-          <div className="flex-1 h-[620px] border-2 border-green-500 rounded-lg flex flex-col items-center justify-center">
-            <div className="space-y-2.5 flex flex-col items-center justify-center">
-              <Image src="/bored_ape_guest.avif" alt="Logo" width={200} height={200} className="w-[300px] h-[300px] border-2 border-green-500 rounded-full" />
-              <p className="text-white text-3xl font-semibold text-center">Guest user</p>
+          <div className="flex-1 h-[520px] flex flex-col items-center justify-center">
+            <div className="space-y-5 flex flex-col items-center justify-center">
+              <Image src="/bored_ape_guest.avif" alt="Logo" width={200} height={200} className="w-[300px] h-[300px] rounded-full" />
+              <p className="text-white text-3xl font-medium text-center">Guest user</p>
               <div className="space-x-2.5">
                 <SocialIcon url="https://x.com" className="border-2 border-white rounded-full" />
                 <SocialIcon url="https://discord.com" />
